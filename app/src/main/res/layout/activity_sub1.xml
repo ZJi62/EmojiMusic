@@ -11,61 +11,63 @@
         android:id="@+id/tv_sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_margin="20dp"
-        android:textColor="#8CCFD8"
         android:gravity="center"
-        android:text="여름휴가를 떠나고픈 노래"/>
+        android:text="슬픔에 잠길 노래"
+        android:textAlignment="center"
+        android:textColor="#718285"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/img_sum"
+        android:id="@+id/img_sad"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@mipmap/summer1"/>
+        android:src="@drawable/sunwoojunga"/>
 
     <Button
-        android:id="@+id/btn_sum"
-        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_sad"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:text="여름 노래 들으러 가기"
-        android:textSize="14dp"/>
+        android:layout_marginBottom="30dp"
+        android:text="선우정아 - 그러려니"
+        android:textSize="14dp" />
 
     <Button
-    android:id="@+id/btn_random1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="20dp"
-    android:text="오늘의 행운의 숫자는?"
-    android:textSize="15dp" />
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="오늘의 행운의 숫자는?"
+        android:textSize="15dp" />
 
     <LinearLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/random_text1"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textAlignment="center"
+            android:layout_height="wrap_content"
             android:hint="행운의숫자"
+            android:textAlignment="center"
             android:textSize="30dp"
-            />
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/img_sum1"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_margin="20dp"
+        android:id="@+id/img_sad2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@mipmap/summer2"/>
+        android:layout_margin="20dp"
+        android:src="@drawable/sad"/>
 
 </LinearLayout>

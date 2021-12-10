@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmojiMusic">
         <activity
+            android:name=".SubActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".SubActivity4"
+            android:exported="false" />
+        <activity
             android:name=".SubActivity3"
             android:exported="false" />
         <activity
@@ -23,8 +29,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-        <activity android:name=".MainActivity0"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity0"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

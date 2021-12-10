@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SubActivity2">
+    tools:context=".SubActivity1">
 
     <TextView
         android:id="@+id/tv_sub"
@@ -14,27 +14,27 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_margin="20dp"
-        android:textColor="#DA9090"
+        android:textColor="#8CCFD8"
         android:gravity="center"
-        android:text="크리스마스에 듣고 싶은 노래"/>
+        android:text="여름휴가를 떠나고픈 노래"/>
 
     <ImageView
-        android:id="@+id/img_win"
+        android:id="@+id/img_sum"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@mipmap/winter1"/>
+        android:src="@mipmap/summer1"/>
 
     <Button
-        android:id="@+id/btn_win"
+        android:id="@+id/btn_sum"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:text="겨울 노래 들으러 가기"
-        android:textSize="13dp"/>
+        android:text="여름 노래 들으러 가기"
+        android:textSize="14dp"/>
 
     <Button
-        android:id="@+id/btn_random3"
+        android:id="@+id/btn_random4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -50,7 +50,7 @@
         android:layout_gravity="center">
 
         <TextView
-            android:id="@+id/random_text3"
+            android:id="@+id/random_text4"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAlignment="center"
@@ -61,11 +61,11 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/img_win1"
+        android:id="@+id/img_sum1"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_margin="20dp"
         android:layout_gravity="center"
-        android:src="@mipmap/winter2"/>
+        android:src="@mipmap/summer2"/>
 
 </LinearLayout>

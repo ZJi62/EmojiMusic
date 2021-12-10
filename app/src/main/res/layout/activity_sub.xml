@@ -5,66 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SubActivity">
+    tools:context=".SubActivity1">
 
     <TextView
         android:id="@+id/tv_sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_margin="20dp"
-        android:textColor="#FDB0B0"
         android:gravity="center"
-        android:text="벚꽃이 떠오르는 노래"/>
+        android:text="춤이 절로 나오는 노래"
+        android:textAlignment="center"
+        android:textColor="#ECD067"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/img_spr"
+        android:id="@+id/img_happy"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@mipmap/spring1"/>
+        android:src="@drawable/seventeen"/>
 
     <Button
-        android:id="@+id/btn_spr"
-        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_happy"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:text="봄 노래 들으러 가기"
-        android:textSize="15dp"/>
+        android:layout_marginBottom="30dp"
+        android:text="Seventeen-Crush"
+        android:textSize="14dp" />
 
     <Button
         android:id="@+id/btn_random"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
         android:text="오늘의 행운의 숫자는?"
         android:textSize="15dp" />
 
     <LinearLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/random_text"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textAlignment="center"
+            android:layout_height="wrap_content"
             android:hint="행운의숫자"
+            android:textAlignment="center"
             android:textSize="30dp"
-            />
+            android:layout_marginBottom="30dp"/>
+
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/img_spr2"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_margin="20dp"
+        android:id="@+id/img_happy2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@mipmap/spring2"/>
+        android:layout_margin="20dp"
+        android:src="@drawable/happy"/>
 
 </LinearLayout>

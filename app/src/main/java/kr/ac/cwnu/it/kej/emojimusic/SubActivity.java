@@ -17,8 +17,8 @@ import java.util.Random;
 
 public class SubActivity extends AppCompatActivity {
 
-    private Button btn_spr;
-    private ImageView img_spr;
+    private Button btn_happy;
+    private ImageView img_happy;
 
     Button mbtn_random;
 
@@ -28,8 +28,8 @@ public class SubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub);
 
-        btn_spr = findViewById(R.id.btn_spr);
-        btn_spr.setOnClickListener(new View.OnClickListener() {
+        btn_happy = findViewById(R.id.btn_happy);
+        btn_happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/ESKfHHtiSjs"));
@@ -37,8 +37,8 @@ public class SubActivity extends AppCompatActivity {
             }
         });
 
-        img_spr = (ImageView) findViewById(R.id.img_spr);
-        img_spr.setOnClickListener(new View.OnClickListener() {
+        img_happy = (ImageView) findViewById(R.id.img_happy);
+        img_happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "하단 버튼을 눌러주세요!", Toast.LENGTH_SHORT).show();

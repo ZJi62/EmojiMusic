@@ -15,21 +15,21 @@ import org.w3c.dom.Text;
 
 import java.util.Random;
 
-public class SubActivity1 extends AppCompatActivity {
+public class SubActivity4 extends AppCompatActivity {
 
-    private Button btn_sad;
-    private ImageView img_sad;
+    private Button btn_sum;
+    private ImageView img_sum;
 
-    Button mbtn_random1;
+    Button mbtn_random4;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub1);
+        setContentView(R.layout.activity_sub4);
 
-        btn_sad = findViewById(R.id.btn_sad);
-        btn_sad.setOnClickListener(new View.OnClickListener() {
+        btn_sum = findViewById(R.id.btn_sum);
+        btn_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/ESKfHHtiSjs"));
@@ -37,18 +37,18 @@ public class SubActivity1 extends AppCompatActivity {
             }
         });
 
-        img_sad = (ImageView) findViewById(R.id.img_sad);
-        img_sad.setOnClickListener(new View.OnClickListener() {
+        img_sum = (ImageView) findViewById(R.id.img_sum);
+        img_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "하단 버튼을 눌러주세요!", Toast.LENGTH_SHORT).show();
             }
         });
 
-        mbtn_random1 = findViewById(R.id.btn_random);
-        TextView random_text1 = findViewById(R.id.random_text1);
+        mbtn_random4 = findViewById(R.id.btn_random4);
+        TextView random_text4 = findViewById(R.id.random_text4);
 
-        mbtn_random1.setOnClickListener(new View.OnClickListener() {
+        mbtn_random4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 버튼클릭시 랜덤발생
@@ -56,7 +56,7 @@ public class SubActivity1 extends AppCompatActivity {
 
                 int arr_random_num = random.nextInt(99) + 1;
                 // 랜덤숫자를 텍스트뷰에 대입
-                random_text1.setText(Integer.toString(arr_random_num));
+                random_text4.setText(Integer.toString(arr_random_num));
             }
 
         });
