@@ -30,28 +30,34 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:text="버스커버스커 - 벚꽃엔딩"
+        android:text="봄 노래 들으러 가기"
         android:textSize="15dp"/>
 
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:text="오늘의 행운의 숫자는?"
-        android:textSize="20dp"/>
+        android:textSize="15dp" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="7"
-        android:textSize="80dp"
-        android:textColor="#FFC3C3"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/random_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:hint="행운의숫자"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/img_spr2"

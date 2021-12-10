@@ -30,28 +30,35 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:text="B1A4 - 크리스마스잖아요"
+        android:text="겨울 노래 들으러 가기"
         android:textSize="13dp"/>
 
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/btn_random2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:text="오늘의 행운의 숫자는?"
-        android:textSize="20dp"/>
+        android:textSize="15dp" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="52"
-        android:textSize="80dp"
-        android:textColor="#CA6971"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/random_text2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:hint="행운의숫자"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/img_win1"

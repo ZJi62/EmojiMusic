@@ -1,4 +1,3 @@
-
 package kr.ac.cwnu.it.kej.emojimusic;
 
 import androidx.appcompat.app.AppCompatActivity;

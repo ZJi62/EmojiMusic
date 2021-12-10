@@ -11,10 +11,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
+import java.util.Random;
+
 public class SubActivity2 extends AppCompatActivity {
 
     private Button btn_win;
     private ImageView img_win;
+
+    Button mbtn_random2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +32,7 @@ public class SubActivity2 extends AppCompatActivity {
         btn_win.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/hOFzQjdFMr8"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/ESKfHHtiSjs"));
                 startActivity(intent);
             }
         });
@@ -36,6 +43,22 @@ public class SubActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "하단 버튼을 눌러주세요!", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        mbtn_random2 = findViewById(R.id.btn_random2);
+        TextView random_text2 = findViewById(R.id.random_text2);
+
+        mbtn_random2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 버튼클릭시 랜덤발생
+                Random random = new Random();
+
+                int arr_random_num = random.nextInt(99) + 1;
+                // 랜덤숫자를 텍스트뷰에 대입
+                random_text2.setText(Integer.toString(arr_random_num));
+            }
+
         });
     }
 }
